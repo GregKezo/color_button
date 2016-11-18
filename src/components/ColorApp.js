@@ -6,6 +6,13 @@ class ColorApp extends React.Component {
   constructor(props) {
     super(props);
     this.addColorField = this.addColorField.bind(this);
+    this.showColors = this.showColors.bind(this);
+
+    this.state = { colors: [], id: 0 }
+  }
+
+  showColors() {
+    return( this.state.colors)
   }
 
   addColorField(name) {
@@ -24,7 +31,7 @@ class ColorApp extends React.Component {
     return (
       <div>
         <ColorButton addColorField={this.addColorField} />
-        <ColorField />
+        <ColorField colors={this.showColors()}/>
       </div>
     )
   }

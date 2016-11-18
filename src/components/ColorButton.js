@@ -9,12 +9,15 @@ class ColorButton extends React.Component {
 
   listColor(e) {
     e.preventDefault();
-    let color = this.refs.color.value;
+    console.log('Button ran')
+    let color = this.refs.btn.value
+    this.props.addColorField(color)
+
   }
 
   render() {
     return (
-      <button className="btn" onClick={this.listColor}></button>
+      <button ref='btn' onClick={this.listColor}>Red</button>
     )
   }
 }
