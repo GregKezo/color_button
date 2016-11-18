@@ -6,7 +6,7 @@ class ColorField extends React.Component {
   render() {
       return(
       <div>
-        <ul>
+        <ul>   
           <Color />
         </ul>
       </div>

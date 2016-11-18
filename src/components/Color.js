@@ -2,9 +2,9 @@ import React from 'react';
 
 const Color = ({ id, name }) => (
   <li>
-    <span
+    <div
       style = {{height: '40px', width: '200px', backgroundColor: 'red'}}>
-    </span>
+    </div>
   </li>
 )
 
